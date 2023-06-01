@@ -25,7 +25,7 @@ function makeClient() {
     },
   });
 
-  const wsLink = new WebSocketLink({
+  const wsLink: any = new WebSocketLink({
     uri: "wss://graphql-crypto.onrender.com/graphql",
     options: {
       reconnect: true,
